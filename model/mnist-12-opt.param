@@ -1,0 +1,11 @@
+7767517
+9 9
+Input                    Input3                   0 1 Input3
+MemoryData               Parameter193_reshape1    0 1 Parameter193_reshape1 0=10 1=256
+MemoryData               Parameter194             0 1 Parameter194 0=10
+Convolution              Convolution28            1 1 Input3 ReLU32_Output_0 0=8 1=5 4=-233 5=1 6=200 9=1
+Pooling                  Pooling66                1 1 ReLU32_Output_0 Pooling66_Output_0 1=2 2=2 5=1
+Convolution              Convolution110           1 1 Pooling66_Output_0 ReLU114_Output_0 0=16 1=5 4=-233 5=1 6=3200 9=1
+Pooling                  Pooling160               1 1 ReLU114_Output_0 Pooling160_Output_0 1=3 2=3 5=1
+Reshape                  Times212_reshape0        1 1 Pooling160_Output_0 Pooling160_Output_0_reshape0 0=256
+Gemm                     Plus214_Output_0         3 1 Pooling160_Output_0_reshape0 Parameter193_reshape1 Parameter194 Plus214_Output_0
