@@ -46,6 +46,6 @@ GNU and Intel compilers have been tested.
 ## References
 
 - [ncnn](https://github.com/Tencent/ncnn)
-- [ncnn_on_xr806](https://github.com/nihui/ncnn_on_xr806/blob/master/ncnn_demo/src/main.cpp)
+- [ncnn_on_xr806](https://github.com/nihui/ncnn_on_xr806)
 - [MNIST - Handwritten Digit Recognition](https://github.com/onnx/models/tree/main/vision/classification/mnist)
 
