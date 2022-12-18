@@ -3,7 +3,7 @@
 #include <ncnn/mat.h>
 #include <ncnn/net.h>
 
-void predict(const float **image, int *label_pred) {
+void predict(void *image, int *label_pred) {
     // receive input
     ncnn::Mat in(28, 28, 1, image);
     // receive output
