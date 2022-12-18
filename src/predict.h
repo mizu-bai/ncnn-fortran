@@ -2,7 +2,7 @@
 #define PREDICT_HEADER_
 
 extern "C" {
-    void predict(const float **image, int *label_pred);
+    void predict(void *image, int *label_pred);
 }
 
 #endif
